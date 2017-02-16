@@ -1,10 +1,32 @@
 body {
-  background: purple; }
+  background: #333;
+  font-family: "Helvetica", "sans-serif"; }
 
-h2 {
-  color: red; }
+.logo-image {
+  padding-top: 5px; }
 
-h3 {
-  color: green; }
+.logo-image img {
+  height: 40px; }
+
+.playlist-info h2 {
+  color: #fff;
+  text-align: left;
+  font-size: 30px;
+  padding-left: 12px; }
+
+.page-title {
+  color: #fff; }
+
+.col-xs-4:nth-child(3n+1) {
+  clear: left; }
+
+.song {
+  text-align: center; }
+
+.song-title {
+  font-size: 20px; }
+
+.song-artist {
+  font-size: 15px; }
 
 /*# sourceMappingURL=styles.css.map*/
