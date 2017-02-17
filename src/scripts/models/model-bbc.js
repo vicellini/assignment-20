@@ -19,3 +19,15 @@ export const BbcRadio2Collection = Backbone.Collection.extend({
 	},
 	initialize: function(){ /* no op */ }
 })
+
+
+export const SpotifyCollection = Backbone.Collection.extend({
+	model: BbcModel,
+	url: ``,
+	parse: function(rawJsonRes){
+		return rawJsonRes.data
+	},
+	initialize: function(artist){
+		this.url = 'https://api.spotify.com/v1/search?q=' + artist + '&type=artist'
+	}
+})
