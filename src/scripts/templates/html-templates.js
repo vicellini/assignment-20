@@ -1,7 +1,7 @@
 export const createPageTemplate = function(playList){
 	let finalHTMLString = playList.map(function(songObj){
 		return `
-							  <div class="col-xs-4">
+							  <div class="col-xs-4 song-tab">
 							    <div class="thumbnail">
 							      <img src="${songObj.image}">
 							      <div class="caption song">
@@ -20,7 +20,7 @@ export const createPageTemplate = function(playList){
 export const createPageTemplateMulti = function(playlist1, playlist2, playlist3){
 	let firstHTMLString = playlist1.map(function(songObj){
 		return `
-							  <div class="col-xs-4">
+							  <div class="col-xs-4 song-tab">
 							    <div class="thumbnail">
 							      <img src="${songObj.image}">
 							      <div class="caption song">
@@ -34,7 +34,7 @@ export const createPageTemplateMulti = function(playlist1, playlist2, playlist3)
  }).join("")
  let secondHTMLString = playlist2.map(function(songObj){
 	 return `
-							 <div class="col-xs-4">
+							 <div class="col-xs-4 song-tab">
 								 <div class="thumbnail">
 									 <img src="${songObj.image}">
 									 <div class="caption song">
@@ -48,7 +48,7 @@ export const createPageTemplateMulti = function(playlist1, playlist2, playlist3)
 	 }).join("")
 	 let thirdHTMLString = playlist3.map(function(songObj){
 		 return `
-								 <div class="col-xs-4">
+								 <div class="col-xs-4 song-tab">
 									 <div class="thumbnail">
 										 <img src="${songObj.image}">
 										 <div class="caption song">
@@ -79,7 +79,7 @@ export const createHeaderHTML = function(station, time){
 export const featureHTMlPage = function(play1, play2, play3){
 	let firstString = play1.map(function(songObj){
 	return`
-			<div class="col-xs-4">
+			<div class="col-xs-4 song-tab">
 			<h2 class="feature-header">Track of the Day</h2>
 				<div class="thumbnail">
 					<img src="${songObj.image}">
@@ -93,7 +93,7 @@ export const featureHTMlPage = function(play1, play2, play3){
  }).join("")
  let secondString = play2.map(function(songObj){
  return`
-		 			  <div class="col-xs-4">
+		 			  <div class="col-xs-4 song-tab">
 						<h2 class="feature-header">Artist of the Week</h2>
 								 <div class="thumbnail">
 									 <img src="${songObj.image}">
@@ -107,7 +107,7 @@ export const featureHTMlPage = function(play1, play2, play3){
  }).join("")
  let finalString = play3.map(function(songObj){
  return`
-		 <div class="col-xs-4">
+		 <div class="col-xs-4 song-tab">
 		 <h2 class="feature-header">Rhythms of the World</h2>
 				<div class="thumbnail">
 					<img src="${songObj.image}">

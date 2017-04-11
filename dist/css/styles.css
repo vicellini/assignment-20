@@ -2,6 +2,18 @@ body {
   background: #333;
   font-family: "Helvetica", "sans-serif"; }
 
+.song-tab:hover {
+  box-shadow: 0px 0px 150px #000000;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.25);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.25);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.25);
+  transition: all 200ms ease-in;
+  transform: scale(1.25); }
+
 .logo-image {
   padding-top: 5px; }
 
