@@ -39,8 +39,8 @@ const AppRouter = Backbone.Router.extend({
 	},
 
 	handleArtistPage: function(evt){
-		console.log(evt)
-
+		console.log()
+		window.location.hash
 	},
 
 	handleFeaturedPages: function(){
